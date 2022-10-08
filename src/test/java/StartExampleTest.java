@@ -20,6 +20,21 @@ public class StartExampleTest {
         Assertions.assertEquals(0,result);
 
     }
+    @Test
+    public void testArraysWithDifferentLength() {
+        boolean [] arr1 = {true,true,true};
+        boolean [] arr2 = {true,true};
+        int result=example.getHammingDistance(arr1,arr2);
+        Assertions.assertEquals(0,result);
+
+    }
+    @Test
+    public void testArraysAreEmpty(){
+        boolean [] arr1 = {};
+        boolean [] arr2 = {};
+        int result=example.getHammingDistance(arr1,arr2);
+        Assertions.assertEquals(0,result);
+    }
 
 
 }
